@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="tsignup.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="aswin">Aswin.com</a></li>
+            <li class="hideonmobile"><a href="homepage.html">Home</a></li>
+            <li class="hideonmobile"><a href="#">About</a></li>
+            <li class="hideonmobile"><a href="tlogin.html">Login</a></li>
+            <li class="hideonmobile"><a href="tsignup.html">Sign up</a></li>
+            <li class="menubutton" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+        </ul>
+        <div class="box">
+            <div class="heading">Teachers Registeration</div>
+            <form class="row g-3" action="panel" method="post">
+                <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="Email" >
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" name="Username">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" name="Password">
+                </div>
+                
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Phone number</label>
+                  <input type="number" class="form-control" id="inputCity" name="PhoneNumber">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Department</label>
+                  <select id="inputState" class="form-select" name="Department">
+                    <option selected>Choose...</option>
+                    <option>Computer Science</option>
+                    <option>Mechanical</option>
+                    <option>Electronics</option>
+                    <option>Civil</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputZip" class="form-label">Employee ID</label>
+                  <input type="number" class="form-control" name="EmployeeNumber">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      I agree to all the term and conditions.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Register Now</button>
+                </div>
+              </form>
+        </div>
+    </nav>
+    
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>

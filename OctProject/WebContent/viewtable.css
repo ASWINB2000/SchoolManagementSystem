@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background:url("mountaintop.jpg") no-repeat;
+    background-size: cover;
+
+}
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    width: 100px;
+    overflow: hidden;
+    transition:width 0.3s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 0px 0 0 3px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.logo span
+{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color:white;
+    font-size: 15px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 20px;
+}
+
+a:hover{
+    background: blueviolet;
+}
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.tt{
+    width: 300px;
+}
+
+.top{
+    
+    margin-top: 10px;
+    margin-right: 20px;
+    
+  
+    
+}
+.viewdelete{
+    width: 30px;
+    
+}
+.glass{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 900px;
+    height: 500px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0,0,.2);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 4px solid rgba(255, 255, 255, .2);
+    border-bottom: px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+}
+.table-container{
+    max-height: 470px;
+    overflow-y: scroll;
+    
+}

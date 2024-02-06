@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+body
+{
+    background: url("mountaintop.jpg") no-repeat;
+    background-size: cover;
+    
+}
+.box{
+    width: 400px;
+    height: 400px;
+    margin-left:250px;
+    margin-top: 60px;
+    color: white;
+    font-size: 20px;
+
+    
+}
+.glass{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 900px;
+    height: 500px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0,0,.2);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 4px solid rgba(255, 255, 255, .2);
+    border-bottom: px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+}
+.heading{
+    margin-left: 20px;
+    color: white;
+    margin-top: 20px;
+
+}
+.lightbutton{
+    position: absolute;
+    margin-left: 200px;
+}
